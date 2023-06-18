@@ -1,0 +1,9 @@
+#REMOVE the .html file ext from end of webpage
+
+RewriteEngine on
+
+ReWrite Cond %{REQUEST_FILENAME} !-d
+
+ReWriteCond %{REQUEST_FILENAME}.\html -f
+
+ReWriteRule ^(.*)$ $1.html [NC, L]
