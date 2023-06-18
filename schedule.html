@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule | JKYog Gavel Club Sunnyvale</title>
+  <link rel="icon" type="image/png" href="./toastmasters.png">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      opacity: 70%;
+    }
+
+    header .logo {
+      margin-right: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ffffff;
+      margin-left: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    /* Center header vertically */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      h1 {
+        margin-left: 0;
+      }
+      header h1 {
+        display: none;
+      }
+      nav ul {
+        padding-left: 0;
+      }
+      nav ul li {
+        margin-right: 10px;
+      }
+    }
+
+    .schedule-section {
+      margin-top: 10vh;
+      background-color: #ffffff;
+      padding: 20px;
+      width: 90%;
+    }
+
+    .schedule-section h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    .calendar {
+      height: 600px;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="./toastmasters.png" alt="Toastmasters" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="schedule-section">
+      <h2>Club Schedule</h2>
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23f7f7f7&amp;ctz=America%2FLos_Angeles&amp;src=bayareagavelclub%40gmail.com&amp;src=en.indian%23holiday%40group.v.calendar.google.com&amp;color=%232952A3&amp;color=%23A32929&amp;showTitle=0&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=1&amp;showTz=0&amp;showDate=1&amp;showNav=1&amp;showPrint=0&amp;hl=en" 
+        frameborder="0" scrolling="no" class="calendar"></iframe>
+    </section>
+  </div>
+</body>
+</html>
